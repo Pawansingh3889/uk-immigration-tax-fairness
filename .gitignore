@@ -1,3 +1,4 @@
 payslips/
-*.py
+build_*.py
 __pycache__/
+.ipynb_checkpoints/

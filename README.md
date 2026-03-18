@@ -1,55 +1,43 @@
-# UK Immigration Tax Fairness Analysis
+# PSW Graduate Tax Contribution: A Data-Driven Analysis
 
-Analysis of how much a Post-Study Work (PSW) visa graduate contributes to the UK economy vs what the government charges them. Built from real payslip data across two employers over 20 months.
+I arrived in the UK in January 2023 to study MSc Data Analytics at Aston University, Birmingham. After graduating, I moved to Hull and started working full-time — first at Cranswick Convenience Foods, then as Team Leader at Copernus Fresh Fish. This workbook uses my real payslip data to answer one question: **how much have I actually contributed to the UK, and is what the government charges me fair?**
 
-## The Question
+## My Numbers
 
-A PSW graduate pays PAYE tax, National Insurance, visa fees, and Immigration Health Surcharge. A UK citizen doing the same job pays only tax and NI. Is the additional charge on immigrants fair, given their actual contribution?
-
-## Data
-
-- **Period**: July 2024 — March 2026 (20 months)
-- **Employers**: Cranswick Convenience Foods (production), Copernus Ltd (team leader)
-- **Source**: Real payslip year-to-date totals, HMRC tax tables, Home Office fee schedule
-- **Gross earnings**: £42,139 over 20 months
-
-## Workbook Structure (5 sheets)
-
-### Sheet 1: Tax Contribution
-Total PAYE tax, NI, and employer NI paid across both employers. Bar chart showing contribution by period.
-
-### Sheet 2: Immigration Costs
-Side-by-side comparison: what a PSW graduate pays vs a UK citizen for the same job. Includes visa fees, IHS, international tuition premium.
-
-### Sheet 3: NHS Double Charge
-PSW graduates pay National Insurance (which funds NHS) AND Immigration Health Surcharge (which also funds NHS). This sheet calculates the overlap. Employee NI contribution to NHS: ~£1,599. IHS paid: £2,070. Total NHS payment: £3,669 — for one A&E visit.
-
-### Sheet 4: Net Contribution
-Total money put into the UK (tax, NI, visa, tuition, VAT, council tax) vs total public services consumed (1 A&E visit). Net contribution: overwhelmingly positive.
-
-### Sheet 5: Pension
-Employee and employer pension contributions across both jobs. Notes on accessing pension if leaving the UK.
+| | Amount |
+|---|---|
+| Gross earnings (20 months of work) | £42,139 |
+| PAYE Income Tax I paid | £3,794 |
+| National Insurance I paid | £1,999 |
+| Employer NI (paid because I work) | ~£5,389 |
+| My pension pot (confirmed from providers) | £2,479.70 |
+| Student Visa + IHS | £1,195 |
+| PSW Visa + IHS | £2,892 |
+| MSc Tuition (net of scholarship) | £9,400 |
 
 ## Key Findings
 
-- **£28,000+ contributed** to the UK economy in 20 months (tax, NI, visa, tuition, indirect taxes)
-- **£150 consumed** in public services (one A&E visit, paid for own medicine)
-- **£2,892 extra** paid compared to a UK citizen doing the same job (visa + IHS)
-- **£2,070 IHS** is a duplicate charge — NI already funds the NHS
-- **Zero benefits claimed**, no recourse to public funds
-- **Net contributor**: put in approximately £28,000, took out approximately £150
+- **I contributed ~£30,000 to the UK** in 2.5 years (tax, NI, visa fees, tuition, VAT, council tax)
+- **I consumed ~£150** in public services (one A&E visit where I waited 4 hours, then paid for my own medicine)
+- **I pay for the NHS twice** — National Insurance funds the NHS, and the Immigration Health Surcharge also funds the NHS. I paid £3,669 total for NHS access. A UK citizen on the same salary paid £1,599.
+- **I paid £4,087 more** than a UK citizen would pay to do the exact same job (visa + IHS + international tuition premium)
+- **I have No Recourse to Public Funds** — I cannot claim Universal Credit, housing benefit, or any state support despite paying into the system
+- **I applied to 20-50 data roles** — most rejected me because of my visa status. My PSW expires mid-2026.
+- **My pension is £2,479.70** across Legal & General (Cranswick) and my Copernus provider
 
-## Excel Techniques Used
+## Workbook Structure
 
-| Technique | Sheet |
+| Sheet | What it shows |
 |---|---|
-| SUM, formulas | All sheets |
-| Conditional formatting | Tax Contribution |
-| Bar charts | Tax Contribution, Immigration Costs |
-| Pie chart | NHS Double Charge |
-| Cross-referencing | Net Contribution |
-| Data presentation | All sheets |
+| **My Story** | Employment timeline, gross pay, tax, NI, pension from real payslips |
+| **Me vs UK Citizen** | Side-by-side: what I paid vs what a UK citizen pays for the same job |
+| **NHS Double Charge** | I pay NI (funds NHS) AND IHS (funds NHS). Pie chart showing the overlap |
+| **Net Contribution** | Everything I put in vs everything I took out. The number speaks for itself. |
+| **My Pension** | Confirmed pot values from provider portals, how pension works if I leave the UK |
 
-## Context
+## Data Sources
 
-This analysis was built by a PSW graduate working full-time in Hull while building a data engineering portfolio. The numbers are from real payslips. The argument is factual, not political — the data speaks for itself.
+- My payslips from Cranswick Convenience Foods (Jul 2024 - Apr 2025) and Copernus Ltd (Apr 2025 - Mar 2026)
+- Pension balances confirmed from Legal & General and Copernus pension provider portals
+- Home Office fee schedule for PSW and Tier 4 visas
+- HMRC tax rates and NI thresholds for 2024/25 and 2025/26
