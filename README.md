@@ -18,7 +18,7 @@ I arrived in the UK in January 2023 to study MSc Data Analytics at Aston Univers
 ## Key Findings
 
 - **I contributed ~£30,000 to the UK** in 2.5 years (tax, NI, visa fees, tuition, VAT, council tax)
-- **I consumed ~£150** in public services (one A&E visit where I waited 4 hours, then paid for my own medicine)
+- **I consumed ~£96** in public services (one A&E visit where I waited 4 hours, then paid for my own medicine)
 - **I pay for the NHS twice** — National Insurance funds the NHS, and the Immigration Health Surcharge also funds the NHS. I paid £3,669 total for NHS access. A UK citizen on the same salary paid £1,599.
 - **I paid £4,087 more** than a UK citizen would pay to do the exact same job (visa + IHS + international tuition premium)
 - **I have No Recourse to Public Funds** — I cannot claim Universal Credit, housing benefit, or any state support despite paying into the system
@@ -41,3 +41,9 @@ I arrived in the UK in January 2023 to study MSc Data Analytics at Aston Univers
 - Pension balances confirmed from Legal & General and Copernus pension provider portals
 - Home Office fee schedule for PSW and Tier 4 visas
 - HMRC tax rates and NI thresholds for 2024/25 and 2025/26
+- NHS Reference Costs 2022-23 (VB11Z: Type 1 A&E, no investigation = £96)
+- ONS: NHS expenditure per capita (£4,257/year average)
+
+## Real-Time Updates
+
+This analysis is maintained in a [Google Sheets live tracker](link-to-be-added) where I update my payslip data monthly. The Jupyter notebook can be re-run at any time to regenerate all charts and the Excel report.
