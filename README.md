@@ -1,49 +1,132 @@
-# PSW Graduate Tax Contribution: A Data-Driven Analysis
+# PSW Graduate Visa: A Cost-Benefit Analysis
 
-I arrived in the UK in January 2023 to study MSc Data Analytics at Aston University, Birmingham. After graduating, I moved to Hull and started working full-time — first at Cranswick Convenience Foods, then as Team Leader at Copernus Fresh Fish. This workbook uses my real payslip data to answer one question: **how much have I actually contributed to the UK, and is what the government charges me fair?**
+**Research question:** What is the net fiscal contribution of a Post-Study Work visa holder to the UK economy, and how does the cost structure compare to a UK citizen in equivalent employment?
 
-## My Numbers
+## Executive Summary
 
-| | Amount |
+| Metric | Value |
 |---|---|
-| Gross earnings (20 months of work) | £42,139 |
-| PAYE Income Tax I paid | £3,794 |
-| National Insurance I paid | £1,999 |
-| Employer NI (paid because I work) | ~£5,389 |
-| My pension pot (confirmed from providers) | £2,479.70 |
-| Student Visa + IHS | £1,195 |
-| PSW Visa + IHS | £2,892 |
-| MSc Tuition (net of scholarship) | £9,400 |
+| **Net contribution to the UK** | **£29,969** |
+| Total contributed (tax, NI, visa fees, tuition, VAT, council tax) | £30,065 |
+| Total consumed from public services | £96 |
+| Additional cost vs UK citizen (same job, same pay) | £4,087 |
+| NHS payments made | £4,609 |
+| NHS services consumed | £96 (one A&E visit) |
+| Benefits claimed | £0 |
+| Period covered | Jan 2023 – Mar 2026 (2.5 years) |
+
+This analysis uses verified payslip data, pension provider statements, HMRC tax rates, and Home Office fee schedules. Every figure is sourced and reproducible.
+
+---
 
 ## Key Findings
 
-- **I contributed ~£30,000 to the UK** in 2.5 years (tax, NI, visa fees, tuition, VAT, council tax)
-- **I consumed ~£96** in public services (one A&E visit where I waited 4 hours, then paid for my own medicine)
-- **I pay for the NHS twice** — National Insurance funds the NHS, and the Immigration Health Surcharge also funds the NHS. I paid £3,669 total for NHS access. A UK citizen on the same salary paid £1,599.
-- **I paid £4,087 more** than a UK citizen would pay to do the exact same job (visa + IHS + international tuition premium)
-- **I have No Recourse to Public Funds** — I cannot claim Universal Credit, housing benefit, or any state support despite paying into the system
-- **I applied to 20-50 data roles** — most rejected me because of my visa status. My PSW expires mid-2026.
-- **My pension is £2,479.70** across Legal & General (Cranswick) and my Copernus provider
+### 1. Net Fiscal Position: +£29,969
 
-## Workbook Structure
+Over 2.5 years in the UK, total contributions to the economy reached £30,065 across income tax, National Insurance, employer NI, visa fees, international tuition, VAT, and council tax. Total public service consumption was £96 — a single A&E attendance (NHS Reference Cost VB11Z: Type 1, no investigation).
 
-| Sheet | What it shows |
+![Net Contribution](charts/04_net_contribution.png)
+
+### 2. Cost Premium Over UK Citizens: £4,087
+
+A UK citizen performing the same role at the same hourly rate pays identical income tax and National Insurance. A PSW visa holder pays an additional £4,087 in immigration-specific costs: student visa (£490), student IHS (£940), PSW visa (£822), PSW IHS (£2,070), and a biometric fee (£19.20). International tuition adds a further £150 premium over the home rate.
+
+![Pawan vs UK Citizen](charts/02_pawan_vs_uk_citizen.png)
+
+### 3. Duplicate NHS Charging
+
+National Insurance contributions fund the NHS. The Immigration Health Surcharge also funds the NHS. A PSW holder pays for the same service through two separate mechanisms.
+
+| Channel | Amount paid |
 |---|---|
-| **My Story** | Employment timeline, gross pay, tax, NI, pension from real payslips |
-| **Me vs UK Citizen** | Side-by-side: what I paid vs what a UK citizen pays for the same job |
-| **NHS Double Charge** | I pay NI (funds NHS) AND IHS (funds NHS). Pie chart showing the overlap |
-| **Net Contribution** | Everything I put in vs everything I took out. The number speaks for itself. |
-| **My Pension** | Confirmed pot values from provider portals, how pension works if I leave the UK |
+| National Insurance (NHS share, ~80%) | £1,599 |
+| Immigration Health Surcharge (Student + PSW) | £3,010 |
+| **Total NHS payments** | **£4,609** |
+| NHS services consumed | £96 |
+
+A UK citizen on identical earnings pays £1,599 for NHS access. A PSW holder pays £4,609 — a 188% premium for the same entitlement.
+
+![NHS Double Charge](charts/03_nhs_double_charge.png)
+
+### 4. No Recourse to Public Funds
+
+Despite contributing to the tax and NI system, PSW visa holders cannot claim Universal Credit, housing benefit, jobseeker's allowance, or any state support. The contribution is unidirectional.
+
+---
 
 ## Data Sources
 
-- My payslips from Cranswick Convenience Foods (Jul 2024 - Apr 2025) and Copernus Ltd (Apr 2025 - Mar 2026)
-- Pension balances confirmed from Legal & General and Copernus pension provider portals
-- Home Office fee schedule for PSW and Tier 4 visas
-- HMRC tax rates and NI thresholds for 2024/25 and 2025/26
-- NHS Reference Costs 2022-23 (VB11Z: Type 1 A&E, no investigation = £96)
-- ONS: NHS expenditure per capita (£4,257/year average)
+| Source | What it provides |
+|---|---|
+| Payslips — Cranswick Convenience Foods (Jul 2024 – Apr 2025) | Gross pay, PAYE, NI, pension deductions |
+| Payslips — Copernus Ltd (Apr 2025 – Mar 2026) | Gross pay, PAYE, NI, pension deductions |
+| Legal & General and Copernus pension provider portals | Confirmed pot values (£504.31 + £1,975.39) |
+| Home Office fee schedule | Visa application and IHS costs |
+| HMRC 2024/25 and 2025/26 tax tables | Income tax bands, NI thresholds |
+| NHS Reference Costs 2022-23 | A&E unit cost (VB11Z = £96) |
+| ONS | NHS expenditure per capita (£4,257/year) |
 
-## Real-Time Updates
+## Employment Timeline
 
-This analysis is maintained in a [Google Sheets live tracker](link-to-be-added) where I update my payslip data monthly. The Jupyter notebook can be re-run at any time to regenerate all charts and the Excel report.
+| Employer | Role | Period | Hourly Rate | Gross Earnings |
+|---|---|---|---|---|
+| Cranswick Convenience Foods | Production Operative | Jul 2024 – Apr 2025 | £12.11 | £11,605 |
+| Copernus Ltd | Team Leader | Apr 2025 – Mar 2026 | £14.00 | £30,534 |
+| **Total** | | **20 months** | | **£42,139** |
+
+![Tax and NI by Employer](charts/01_tax_ni_by_employer.png)
+
+## Methodology
+
+1. **Data collection** — year-to-date totals extracted from final payslips for each employer. Pension balances confirmed directly from provider portals.
+2. **Cost modelling** — immigration costs sourced from Home Office published fee schedules. NHS share of NI estimated at 80% per ONS health expenditure data.
+3. **Comparison framework** — UK citizen baseline calculated using identical gross earnings through HMRC tax and NI calculators, removing all immigration-specific costs.
+4. **Visualisation** — six charts generated via matplotlib, each isolating a single comparison for clarity.
+5. **Excel export** — structured workbook with six sheets for independent verification.
+
+## Pension Position
+
+| Provider | Employee | Employer | Pot Value |
+|---|---|---|---|
+| Legal & General (Cranswick) | £214 | £130 | £504 |
+| Workplace Pension (Copernus) | £1,011 | £606 | £1,975 |
+| **Total** | **£1,225** | **£736** | **£2,480** |
+
+![Pension](charts/06_pension.png)
+
+Both schemes are salary sacrifice (pre-tax). Funds are accessible from age 57, or transferable to a QROPS if leaving the UK.
+
+## Repository Structure
+
+```
+uk-immigration-tax-fairness/
+├── PSW_Tax_Contribution_Analysis.ipynb    # Full analysis with all calculations
+├── UK_Immigration_Tax_Fairness.xlsx       # 6-sheet Excel report for stakeholders
+├── charts/                                # 6 publication-ready visualisations
+│   ├── 01_tax_ni_by_employer.png
+│   ├── 02_pawan_vs_uk_citizen.png
+│   ├── 03_nhs_double_charge.png
+│   ├── 04_net_contribution.png
+│   ├── 05_vs_average_uk.png
+│   └── 06_pension.png
+└── README.md
+```
+
+## How to Reproduce
+
+```bash
+pip install pandas matplotlib seaborn openpyxl
+jupyter notebook PSW_Tax_Contribution_Analysis.ipynb
+```
+
+The notebook regenerates all charts and the Excel workbook from the embedded data. No external API calls required.
+
+## Tools
+
+| Tool | Purpose |
+|---|---|
+| Python 3.11 | Analysis runtime |
+| pandas | Data manipulation and aggregation |
+| matplotlib / seaborn | Statistical visualisation |
+| openpyxl | Excel report generation with formatting |
+| Jupyter | Reproducible notebook-based analysis |
