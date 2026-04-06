@@ -6,10 +6,10 @@
 
 | Metric | Value |
 |---|---|
-| **Net contribution to the UK** | **£31,525** |
-| Total contributed (tax, NI, visa fees, tuition, VAT, council tax) | £31,621 |
+| **Net contribution to the UK** | **£38,125** |
+| Total contributed (tax, NI, visa fees, tuition, VAT, council tax) | £38,221 |
 | Total consumed from public services | £96 |
-| Additional cost vs UK citizen (same job, same pay) | £4,087 |
+| Additional cost vs UK citizen (same job, same pay) | £9,141 |
 | NHS payments made | £4,855 |
 | NHS services consumed | £96 (one A&E visit) |
 | Benefits claimed | £0 |
@@ -21,15 +21,15 @@ This analysis uses verified payslip data, pension provider statements, HMRC tax 
 
 ## Key Findings
 
-### 1. Net Fiscal Position: +£31,525
+### 1. Net Fiscal Position: +£38,125
 
-Over 2.7 years in the UK, total contributions to the economy reached £31,621 across income tax, National Insurance, employer NI, visa fees, international tuition, VAT, and council tax. Total public service consumption was £96 — a single A&E attendance (NHS Reference Cost VB11Z: Type 1, no investigation).
+Over 2.7 years in the UK, total contributions to the economy reached £38,221 across income tax, National Insurance, employer NI, visa fees, international tuition, VAT, and council tax. Total public service consumption was £96 — a single A&E attendance (NHS Reference Cost VB11Z: Type 1, no investigation).
 
 ![Net Contribution](charts/04_net_contribution.png)
 
 ### 2. Cost Premium Over UK Citizens: £4,087
 
-A UK citizen performing the same role at the same hourly rate pays identical income tax and National Insurance. A PSW visa holder pays an additional £4,087 in immigration-specific costs: student visa (£490), student IHS (£940), PSW visa (£822), PSW IHS (£2,070), and a biometric fee (£19.20). International tuition adds a further £150 premium over the home rate.
+A UK citizen performing the same role at the same hourly rate pays identical income tax and National Insurance. A PSW visa holder pays an additional £9,141 in immigration-specific costs: student visa (£490), student IHS (£940), PSW visa (£822), PSW IHS (£2,070), biometric fee (£19), and an international tuition premium of £4,800 (£24,000 international fee minus £8,000 merit scholarship = £16,000 paid, vs £11,200 UK home fee).
 
 ![Pawan vs UK Citizen](charts/02_pawan_vs_uk_citizen.png)
 
