@@ -6,14 +6,14 @@
 
 | Metric | Value |
 |---|---|
-| **Net contribution to the UK** | **£29,969** |
-| Total contributed (tax, NI, visa fees, tuition, VAT, council tax) | £30,065 |
+| **Net contribution to the UK** | **£31,525** |
+| Total contributed (tax, NI, visa fees, tuition, VAT, council tax) | £31,621 |
 | Total consumed from public services | £96 |
 | Additional cost vs UK citizen (same job, same pay) | £4,087 |
-| NHS payments made | £4,609 |
+| NHS payments made | £4,855 |
 | NHS services consumed | £96 (one A&E visit) |
 | Benefits claimed | £0 |
-| Period covered | Jan 2023 – Mar 2026 (2.5 years) |
+| Period covered | Jan 2023 – Apr 2026 (2.7 years) |
 
 This analysis uses verified payslip data, pension provider statements, HMRC tax rates, and Home Office fee schedules. Every figure is sourced and reproducible.
 
@@ -21,9 +21,9 @@ This analysis uses verified payslip data, pension provider statements, HMRC tax 
 
 ## Key Findings
 
-### 1. Net Fiscal Position: +£29,969
+### 1. Net Fiscal Position: +£31,525
 
-Over 2.5 years in the UK, total contributions to the economy reached £30,065 across income tax, National Insurance, employer NI, visa fees, international tuition, VAT, and council tax. Total public service consumption was £96 — a single A&E attendance (NHS Reference Cost VB11Z: Type 1, no investigation).
+Over 2.7 years in the UK, total contributions to the economy reached £31,621 across income tax, National Insurance, employer NI, visa fees, international tuition, VAT, and council tax. Total public service consumption was £96 — a single A&E attendance (NHS Reference Cost VB11Z: Type 1, no investigation).
 
 ![Net Contribution](charts/04_net_contribution.png)
 
@@ -39,12 +39,12 @@ National Insurance contributions fund the NHS. The Immigration Health Surcharge 
 
 | Channel | Amount paid |
 |---|---|
-| National Insurance (NHS share, ~80%) | £1,599 |
+| National Insurance (NHS share, ~80%) | £1,845 |
 | Immigration Health Surcharge (Student + PSW) | £3,010 |
-| **Total NHS payments** | **£4,609** |
+| **Total NHS payments** | **£4,855** |
 | NHS services consumed | £96 |
 
-A UK citizen on identical earnings pays £1,599 for NHS access. A PSW holder pays £4,609 — a 188% premium for the same entitlement.
+A UK citizen on identical earnings pays £1,845 for NHS access. A PSW holder pays £4,855 — a 163% premium for the same entitlement.
 
 ![NHS Double Charge](charts/03_nhs_double_charge.png)
 
@@ -59,7 +59,7 @@ Despite contributing to the tax and NI system, PSW visa holders cannot claim Uni
 | Source | What it provides |
 |---|---|
 | Payslips — Cranswick Convenience Foods (Jul 2024 – Apr 2025) | Gross pay, PAYE, NI, pension deductions |
-| Payslips — Copernus Ltd (Apr 2025 – Mar 2026) | Gross pay, PAYE, NI, pension deductions |
+| Payslips — Copernus Ltd (Apr 2025 – Apr 2026) | Gross pay, PAYE, NI, pension deductions |
 | Legal & General and Copernus pension provider portals | Confirmed pot values (£504.31 + £1,975.39) |
 | Home Office fee schedule | Visa application and IHS costs |
 | HMRC 2024/25 and 2025/26 tax tables | Income tax bands, NI thresholds |
@@ -71,8 +71,20 @@ Despite contributing to the tax and NI system, PSW visa holders cannot claim Uni
 | Employer | Role | Period | Hourly Rate | Gross Earnings |
 |---|---|---|---|---|
 | Cranswick Convenience Foods | Production Operative | Jul 2024 – Apr 2025 | £12.11 | £11,605 |
-| Copernus Ltd | Team Leader | Apr 2025 – Mar 2026 | £14.00 | £30,534 |
-| **Total** | | **20 months** | | **£42,139** |
+| Copernus Ltd | Team Leader | Apr 2025 – Apr 2026 | £14.00 | £31,171 |
+| **Total** | | **21 months** | | **£42,776** |
+
+### Copernus Ltd — Verified Payslip Summary (Tax Year to Date)
+
+| Field | Amount |
+|---|---|
+| Gross Pay | £31,170.61 |
+| Taxable Pay (after pension sacrifice) | £30,134.20 |
+| Income Tax Paid | £3,874.00 |
+| Employee National Insurance | £1,545.00 |
+| Employee Pension | £1,036.41 |
+| Employer National Insurance | £3,969.93 |
+| Employer Pension | £621.83 |
 
 ![Tax and NI by Employer](charts/01_tax_ni_by_employer.png)
 
@@ -89,8 +101,8 @@ Despite contributing to the tax and NI system, PSW visa holders cannot claim Uni
 | Provider | Employee | Employer | Pot Value |
 |---|---|---|---|
 | Legal & General (Cranswick) | £214 | £130 | £504 |
-| Workplace Pension (Copernus) | £1,011 | £606 | £1,975 |
-| **Total** | **£1,225** | **£736** | **£2,480** |
+| Workplace Pension (Copernus) | £1,036 | £622 | £2,016 |
+| **Total** | **£1,250** | **£752** | **£2,520** |
 
 ![Pension](charts/06_pension.png)
 
