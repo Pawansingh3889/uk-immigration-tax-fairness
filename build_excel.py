@@ -56,22 +56,22 @@ ws.title = 'Executive Summary'
 ws.sheet_properties.tabColor = '1e3a5f'
 
 ws.cell(row=1, column=1, value='PSW Graduate Visa: Cost-Benefit Analysis').font = TITLE_FONT
-ws.cell(row=2, column=1, value='Period: January 2023 \u2013 March 2026 (2.5 years)').font = NOTE
+ws.cell(row=2, column=1, value='Period: January 2023 \u2013 April 2026 (2.7 years)').font = NOTE
 ws.merge_cells('A1:D1')
 ws.merge_cells('A2:D2')
 
 header_row(ws, 4, ['Metric', 'Value', 'Context', 'Source'], [35, 18, 35, 25])
 
 summary_data = [
-    ('Net contribution to UK', 29969, 'Revenue minus services consumed', 'Calculated', BOLD_GREEN, HIGHLIGHT_GREEN),
-    ('Total contributed', 30065, 'Tax, NI, visa fees, tuition, VAT, council tax', 'Multiple sources', BOLD, None),
+    ('Net contribution to UK', 31090, 'Revenue minus services consumed', 'Calculated', BOLD_GREEN, HIGHLIGHT_GREEN),
+    ('Total contributed', 31186, 'Tax, NI, visa fees, tuition, VAT, council tax', 'Multiple sources', BOLD, None),
     ('Total consumed', 96, 'One A&E visit', 'NHS Reference Costs', BOLD_RED, HIGHLIGHT_RED),
-    ('Extra cost vs UK citizen', 4087, 'Immigration-specific costs', 'Home Office fees', BOLD_RED, None),
-    ('Gross earnings (20 months)', 42139, 'Two employers', 'Payslips', BOLD, None),
-    ('NHS payments made', 4609, 'NI (NHS share) + IHS', 'HMRC + Home Office', BOLD, None),
+    ('Extra cost vs UK citizen', 4491, 'Immigration-specific costs', 'Home Office fees', BOLD_RED, None),
+    ('Gross earnings (21 months)', 42246, 'Two employers', 'Payslips + P60', BOLD, None),
+    ('NHS payments made', 4846, 'NI (NHS share) + IHS', 'HMRC + Home Office', BOLD, None),
     ('NHS services consumed', 96, '1x Type 1 A&E, no investigation', 'VB11Z', BOLD, None),
     ('Benefits claimed', 0, 'No Recourse to Public Funds', 'Visa condition', BOLD, None),
-    ('Pension pot', 2480, 'L&G + Copernus provider', 'Provider portals', BOLD, None),
+    ('Pension pot', 2520, 'L&G + Copernus provider', 'Provider portals', BOLD, None),
 ]
 
 for idx, (metric, value, context, source, font, fill) in enumerate(summary_data, 5):
@@ -94,8 +94,8 @@ header_row(ws2, 3, ['Employer', 'Role', 'Period', 'Months', 'Rate/hr', 'Gross', 
            [30, 20, 22, 10, 10, 14, 14, 14, 14, 14, 16])
 
 emp_data = [
-    ('Cranswick Convenience Foods', 'Production Operative', 'Jul 2024 \u2013 Apr 2025', 9, 12.11, 11605.28, 0, 485.34, 214.28, 1500, 130),
-    ('Copernus Ltd', 'Team Leader', 'Apr 2025 \u2013 Mar 2026', 12, 14.00, 30534.46, 3794.20, 1513.47, 1010.60, 3888.91, 606.35),
+    ('Cranswick Convenience Foods', 'Production Operative', 'Jul 2024 \u2013 Apr 2025', 10, 12.11, 11605.28, 0, 485.34, 214.28, 1500, 130),
+    ('Copernus Ltd', 'Team Leader', 'Apr 2025 \u2013 Apr 2026', 12, 14.00, 30640.28, 3932.80, 1545.00, 1036.41, 3969.93, 621.83),
 ]
 
 for idx, row in enumerate(emp_data, 4):
@@ -105,7 +105,7 @@ for idx, row in enumerate(emp_data, 4):
              fills=[bg]*11)
 
 # Totals row
-data_row(ws2, 6, ['TOTAL', '', '', 21, '', 42139.74, 3794.20, 1998.81, 1224.88, 5388.91, 736.35],
+data_row(ws2, 6, ['TOTAL', '', '', 21, '', 42245.56, 3932.80, 2030.34, 1250.69, 5469.93, 751.83],
          fonts=[BOLD]*11, fmt=[None, None, None, None, None, GBP_FMT2, GBP_FMT2, GBP_FMT2, GBP_FMT2, GBP_FMT2, GBP_FMT2])
 
 # ============================================================
@@ -124,7 +124,7 @@ comp_items = [
     ('MSc Tuition (net of scholarship)', 9400, 9250),
     ('PSW Visa', 822, 0), ('PSW IHS (2 years)', 2070, 0),
     ('Biometric Fee', 19.20, 0),
-    ('PAYE Income Tax', 3794.20, 3794.20), ('National Insurance', 1998.81, 1998.81),
+    ('PAYE Income Tax', 3932.80, 3932.80), ('National Insurance', 2030.34, 2030.34),
     ('VAT (estimated)', 2000, 2000), ('Council Tax (estimated)', 1200, 1200),
 ]
 
@@ -157,14 +157,14 @@ ws4.cell(row=2, column=1, value='Demonstrating duplicate charging through NI and
 header_row(ws4, 4, ['NHS Payment Channel', 'Amount', 'What It Funds', 'Notes'], [28, 14, 25, 35])
 
 nhs_items = [
-    ('NI Contribution (NHS share ~80%)', 1599, 'NHS', 'Standard deduction for all workers'),
+    ('NI Contribution (NHS share ~80%)', 1624, 'NHS', 'Standard deduction for all workers'),
     ('Student IHS', 940, 'NHS', 'Immigration Health Surcharge, 2 years'),
     ('PSW IHS', 2070, 'NHS', 'Immigration Health Surcharge, 2 years'),
 ]
 for idx, (item, amt, funds, notes) in enumerate(nhs_items, 5):
     data_row(ws4, idx, [item, amt, funds, notes], fmt=[None, GBP_FMT, None, None])
 
-data_row(ws4, 8, ['TOTAL NHS PAYMENTS', 4609, '', ''], fonts=[BOLD]*4, fmt=[None, GBP_FMT, None, None])
+data_row(ws4, 8, ['TOTAL NHS PAYMENTS', 4634, '', ''], fonts=[BOLD]*4, fmt=[None, GBP_FMT, None, None])
 
 ws4.cell(row=10, column=1, value='NHS Services Consumed').font = SUBTITLE_FONT
 header_row(ws4, 11, ['Service', 'Cost', 'Reference', 'Detail'], [28, 14, 25, 35])
@@ -174,9 +174,9 @@ data_row(ws4, 13, ['TOTAL CONSUMED', 96, '', ''], fonts=[BOLD]*4, fmt=[None, GBP
 
 ws4.cell(row=15, column=1, value='Comparison').font = SUBTITLE_FONT
 header_row(ws4, 16, ['Metric', 'Amount', '', ''], [28, 14, 25, 35])
-data_row(ws4, 17, ['PSW holder paid for NHS', 4609, '', ''], fonts=[BOLD_RED, BOLD_RED, BODY, BODY], fmt=[None, GBP_FMT, None, None])
-data_row(ws4, 18, ['UK citizen would pay (NI only)', 1599, '', ''], fonts=[BODY]*4, fmt=[None, GBP_FMT, None, None])
-data_row(ws4, 19, ['Premium paid', 3010, '', '188% above UK citizen rate'],
+data_row(ws4, 17, ['PSW holder paid for NHS', 4634, '', ''], fonts=[BOLD_RED, BOLD_RED, BODY, BODY], fmt=[None, GBP_FMT, None, None])
+data_row(ws4, 18, ['UK citizen would pay (NI only)', 1624, '', ''], fonts=[BODY]*4, fmt=[None, GBP_FMT, None, None])
+data_row(ws4, 19, ['Premium paid', 3010, '', '185% above UK citizen rate'],
          fonts=[BOLD_RED]*4, fills=[HIGHLIGHT_RED]*4, fmt=[None, GBP_FMT, None, None])
 
 # ============================================================
@@ -191,11 +191,11 @@ ws5.cell(row=3, column=1, value='CONTRIBUTIONS (What was put in)').font = SUBTIT
 header_row(ws5, 4, ['Item', 'Amount', 'Category'], [40, 16, 20])
 
 contributions = [
-    ('PAYE Income Tax', 3794.20, 'Direct tax'),
-    ('National Insurance', 1998.81, 'Direct tax'),
-    ('Employer NI (exists because of employment)', 5389, 'Indirect'),
-    ('Pension Contributions', 1224.88, 'Savings'),
-    ('Employer Pension', 736, 'Indirect'),
+    ('PAYE Income Tax', 3932.80, 'Direct tax'),
+    ('National Insurance', 2030.34, 'Direct tax'),
+    ('Employer NI (exists because of employment)', 5470, 'Indirect'),
+    ('Pension Contributions', 1250.69, 'Savings'),
+    ('Employer Pension', 752, 'Indirect'),
     ('Student Visa + IHS', 1430, 'Immigration'),
     ('PSW Visa + IHS', 2892, 'Immigration'),
     ('MSc Tuition (net of scholarship)', 9400, 'Education'),
@@ -230,19 +230,19 @@ ws6 = wb.create_sheet('Pension')
 ws6.sheet_properties.tabColor = '7c3aed'
 
 ws6.cell(row=1, column=1, value='Pension Position').font = TITLE_FONT
-ws6.cell(row=2, column=1, value='Confirmed balances from provider portals, March 2026').font = NOTE
+ws6.cell(row=2, column=1, value='Confirmed balances from provider portals, April 2026').font = NOTE
 
 header_row(ws6, 4, ['Provider', 'Employee', 'Employer', 'Total Contributed', 'Pot Value', 'Growth'],
            [28, 14, 14, 18, 14, 14])
 
 pensions = [
     ('Legal & General (Cranswick)', 214.28, 130, 344.28, 504.31, 160.03),
-    ('Workplace Pension (Copernus)', 1010.60, 606.35, 1616.95, 1975.39, 358.44),
+    ('Workplace Pension (Copernus)', 1036.41, 621.83, 1658.24, 2016.00, 357.76),
 ]
 for idx, row in enumerate(pensions, 5):
     data_row(ws6, idx, list(row), fmt=[None]+[GBP_FMT2]*5)
 
-data_row(ws6, 7, ['TOTAL', 1224.88, 736.35, 1961.23, 2479.70, 518.47],
+data_row(ws6, 7, ['TOTAL', 1250.69, 751.83, 2002.52, 2520.31, 517.79],
          fonts=[BOLD]*6, fmt=[None]+[GBP_FMT2]*5)
 
 ws6.cell(row=9, column=1, value='Notes:').font = SUBTITLE_FONT
